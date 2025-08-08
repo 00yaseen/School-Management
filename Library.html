@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Library</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">LIBRARY</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+        <div class="card"  style="top: 100px; padding: 10px 20px;">
+          <h1 class="title has-text-centered">Library Management System</h1><hr>
+    
+          <!-- Add Entry Button -->
+          <div class="buttons">
+            <button class="button is-primary is-outlined" id="addButton">
+              <span class="icon"><i class="fas fa-plus"></i></span> 
+              <span>Add Entry</span>
+            </button>
+          </div>
+    
+          <!-- Library Management Table -->
+          <table class="table is-fullwidth is-striped is-hoverable">
+            <thead>
+              <tr style="background-color: #0E1E3E;">
+                <th style="color: white;">User Type</th>
+                <th style="color: white;">Book Catalog</th>
+                <th style="color: white;">Issued Books</th>
+                <th style="color: white;">Return Date</th>
+                <th style="color: white;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="libraryTableBody">
+              <!-- Rows will be dynamically added here -->
+            </tbody>
+          </table>
+    
+          <!-- Notification for empty list -->
+          <div class="notification is-warning is-hidden" id="emptyMessage">
+            No records found.
+          </div>
+        </div>
+    
+      <!-- Add/Edit Modal -->
+      <div class="modal" id="manageModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Manage Entry</p>
+            <button class="delete" aria-label="close" id="closeModal"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="field">
+              <label class="label">User Type</label>
+              <div class="control">
+                <input class="input" type="text" id="userType" placeholder="Enter user type (Student/Parent/Staff)">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Book Catalog</label>
+              <div class="control">
+                <input class="input" type="text" id="bookCatalog" placeholder="Enter book catalog">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Issued Books</label>
+              <div class="control">
+                <input class="input" type="text" id="issuedBooks" placeholder="Enter issued books">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Return Date</label>
+              <div class="control">
+                <input class="input" type="date" id="returnDate">
+              </div>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success is-outlined" id="saveChanges">Save</button>
+            <button class="button" id="cancelChanges">Cancel</button>
+          </footer>
+        </div>
+      </div>
+
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Sample data (can be replaced with data from a server)
+      const libraryData = [
+        {
+          userType: 'Student',
+          bookCatalog: 'Science Fiction',
+          issuedBooks: 'Dune',
+          returnDate: '2024-11-10'
+        },
+        {
+          userType: 'Staff',
+          bookCatalog: 'Programming',
+          issuedBooks: 'Clean Code',
+          returnDate: '2024-10-25'
+        }
+      ];
+
+      const libraryTableBody = document.getElementById('libraryTableBody');
+      const emptyMessage = document.getElementById('emptyMessage');
+      const manageModal = document.getElementById('manageModal');
+      const userTypeInput = document.getElementById('userType');
+      const bookCatalogInput = document.getElementById('bookCatalog');
+      const issuedBooksInput = document.getElementById('issuedBooks');
+      const returnDateInput = document.getElementById('returnDate');
+      let editingIndex = -1;
+
+      // Populate table
+      function populateTable() {
+        libraryTableBody.innerHTML = '';
+
+        if (libraryData.length === 0) {
+          emptyMessage.classList.remove('is-hidden');
+        } else {
+          emptyMessage.classList.add('is-hidden');
+          libraryData.forEach((entry, index) => {
+            libraryTableBody.innerHTML += `
+              <tr>
+                <td>${entry.userType}</td>
+                <td>${entry.bookCatalog}</td>
+                <td>${entry.issuedBooks}</td>
+                <td>${entry.returnDate}</td>
+                <td>
+                  <button class="button is-outlined is-info" onclick="editEntry(${index})">
+                    <span class="icon"><i class="fas fa-edit"></i></span> <span>Edit</span>
+                  </button>
+                  <button class="button is-outlined is-danger" onclick="deleteEntry(${index})">
+                    <span class="icon"><i class="fas fa-trash-alt"></i></span> <span>Delete</span>
+                  </button>
+                </td>
+              </tr>
+            `;
+          });
+        }
+      }
+
+      // Add or Edit Entry
+      document.getElementById('addButton').addEventListener('click', () => {
+        manageModal.classList.add('is-active');
+        clearModalFields();
+        editingIndex = -1;  // New entry
+      });
+
+      // Close modal
+      document.getElementById('closeModal').addEventListener('click', () => {
+        manageModal.classList.remove('is-active');
+      });
+
+      document.getElementById('cancelChanges').addEventListener('click', () => {
+        manageModal.classList.remove('is-active');
+      });
+
+      // Save changes (add or edit)
+      document.getElementById('saveChanges').addEventListener('click', () => {
+        const userType = userTypeInput.value;
+        const bookCatalog = bookCatalogInput.value;
+        const issuedBooks = issuedBooksInput.value;
+        const returnDate = returnDateInput.value;
+
+        if (userType && bookCatalog && issuedBooks && returnDate) {
+          if (editingIndex === -1) {
+            // Add new entry
+            libraryData.push({ userType, bookCatalog, issuedBooks, returnDate });
+          } else {
+            // Edit existing entry
+            libraryData[editingIndex] = { userType, bookCatalog, issuedBooks, returnDate };
+          }
+          populateTable();
+          manageModal.classList.remove('is-active');
+        } else {
+          alert('Please fill in all fields.');
+        }
+      });
+
+      // Edit entry
+      window.editEntry = (index) => {
+        manageModal.classList.add('is-active');
+        userTypeInput.value = libraryData[index].userType;
+        bookCatalogInput.value = libraryData[index].bookCatalog;
+        issuedBooksInput.value = libraryData[index].issuedBooks;
+        returnDateInput.value = libraryData[index].returnDate;
+        editingIndex = index;  // Track which entry is being edited
+      };
+
+      // Delete entry
+      window.deleteEntry = (index) => {
+        libraryData.splice(index, 1);
+        populateTable();
+      };
+
+      // Clear modal fields
+      function clearModalFields() {
+        userTypeInput.value = '';
+        bookCatalogInput.value = '';
+        issuedBooksInput.value = '';
+        returnDateInput.value = '';
+      }
+
+      // Initial population of the table
+      populateTable();
+    });
+
+</script>
+    </body>
+    </html>

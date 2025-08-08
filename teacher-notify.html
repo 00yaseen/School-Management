@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <title>Notify</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="#" class="navbar-item"><i class="fas fa-chalkboard-teacher"></i>CLASS</a>
+            <a href="#" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="#" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="#" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="#" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="#" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="#" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="#" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">TEACHER</b></a>
+                </div>
+                <a href="/Assests/HTML/Admin/teacher.html" class="head-item"  id="showAddTeacherBtn">Add Teacher</a>
+                <a href="/Assests/HTML/Admin/payment-teach.html" class="head-item" >Payment</a>
+                <a href="/Assests/HTML/Admin/student-notify.html" class="head-item" >Notify</a>
+                <a href="#" class="head-item" >Attandance</a>
+                <a href="#" class="head-item" >Class Routine</a>
+                <a href="#" class="head-item" >Feedback</a>
+
+
+                <div class="nav-center" style="padding-left: 20px;">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: 5px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 100px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header><br><br>
+
+    <section class="section">
+        <div class="container">
+            <div class="card">
+            <h1 class="title is-4 has-text-centered">Teacher Notification Section</h1><hr>
+            <table class="table is-fullwidth">
+                <thead>
+                    <tr class=" subtitle has-background-dark is-medium">
+                        <th class="subtitle has-text-white">#</th>
+                        <th class="subtitle has-text-white">Full Name</th>
+                        <th class="subtitle has-text-white">Gender</th>
+                        <th class="subtitle has-text-white">Subject</th>
+                        <th class="subtitle has-text-white">Class</th>
+                        <th class="subtitle has-text-white">Email</th>
+                        <th class="subtitle has-text-white">Time of Notification</th>
+                        <th class="subtitle has-text-white">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="teacherTable">
+                    <!-- Teacher rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="notificationModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Send Notification</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="label">Notification Message</label>
+                    <div class="control">
+                        <textarea class="textarea" id="notificationMessage" placeholder="Write your notification..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success" id="sendNotification">Send</button>
+                <button class="button" id="resetNotification">Reset</button>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Teacher Data
+        const teachers = [
+            { id: 1, fullName: "Monica Ma'am", gender: "F", subject: "Math", class: "10th Grade", email: "john.doe@example.com" },
+            { id: 2, fullName: "MD Habib", gender: "M", subject: "English", class: "8th Grade", email: "jane.smith@example.com" },
+        ];
+
+        // Populate Teacher Table
+        const teacherTable = document.getElementById('teacherTable');
+        teachers.forEach((teacher, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td style="font-size: 20px;">${teacher.id}</td>
+                <td style="font-size: 20px;">${teacher.fullName}</td>
+                <td style="font-size: 20px;">${teacher.gender}</td>
+                <td style="font-size: 20px;">${teacher.subject}</td>
+                <td style="font-size: 20px;">${teacher.class}</td>
+                <td style="font-size: 20px;">${teacher.email}</td>
+                <td style="font-size: 20px;" id="time-${index}">---</td>
+                <td><button class="button is-outlined is-info is-medium has-text-black sendBtn" data-index="${index}">Send Notification <i class="fas fa-share"></i>  </button></td>
+            `;
+            teacherTable.appendChild(row);
+        });
+
+        // Modal handling
+        const modal = document.getElementById('notificationModal');
+        const notificationMessage = document.getElementById('notificationMessage');
+        const sendBtns = document.querySelectorAll('.sendBtn');
+        let currentTeacherIndex = null; // Track which teacher's notification is being sent
+
+        const closeModal = () => modal.classList.remove('is-active');
+        const openModal = () => modal.classList.add('is-active');
+        const resetBtn = document.getElementById('resetNotification');
+        const deleteBtn = document.querySelector('.delete');
+        const modalBackground = document.querySelector('.modal-background');
+
+        // Add Event Listeners for Send Notification Buttons
+        sendBtns.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                currentTeacherIndex = e.target.getAttribute('data-index'); // Get index of teacher for updating the time
+                openModal();
+            });
+        });
+
+        // Close modal when 'X' button is clicked or when background is clicked
+        deleteBtn.addEventListener('click', closeModal);
+        modalBackground.addEventListener('click', closeModal);
+
+        // Reset Modal Textarea
+        resetBtn.addEventListener('click', () => {
+            notificationMessage.value = '';
+        });
+
+        // Function to get current time in a readable format
+        function getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleString();  // This gives the current date and time in a readable format
+        }
+
+        // Send Notification Logic
+        document.getElementById('sendNotification').addEventListener('click', () => {
+            const message = notificationMessage.value.trim();
+            if (message) {
+                // Update the Time of Notification in the corresponding row
+                const timeCell = document.getElementById(`time-${currentTeacherIndex}`);
+                timeCell.textContent = getCurrentTime();
+
+                // Simulate sending notification (you can replace this with actual logic)
+                alert('Notification Sent: ' + message);
+
+                // Close the modal and reset the textarea
+                closeModal();
+                notificationMessage.value = '';
+            } else {
+                alert('Please write a message before sending.');
+            }
+        });
+    </script>
+    </section>
+    </body>
+    </html>

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>STAFF</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">STAFF</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Bulma Tabs Navigation -->
+    <div class="card" style="top: 80px;">
+    <div class="tabs is-boxed">
+      <ul class="subtitle has-text-centered">
+          <li class="is-active has-text-weight-bold" data-tab="tab1"><a>ALL STAFF</a></li>
+          <li class="is-active has-text-weight-bold" data-tab="tab2"><a>ATTENDANCE</a></li>
+          <li class="is-active has-text-weight-bold" data-tab="tab3"><a>PAYROLL</a></li>
+          <li class="is-active has-text-weight-bold" data-tab="tab4"><a>PERFORMANCE</a></li>
+          <li class="is-active has-text-weight-bold" data-tab="tab5"><a>COMMUNICATION</a></li>
+      </ul>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-content active" id="tab1">
+      <div class="box">
+          <h2 class="title is-4 has-text-centered">MANAGEMENT</h2><hr>
+          <div class="columns is-centered">
+          <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--2nd card-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--3rd-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--4th-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div><hr>
+
+      <!--assistant-->
+      <h2 class="title is-4 has-text-centered">ASSISTANT</h2>
+      <div class="columns is-centered">
+          <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--2nd card-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--3rd-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--4th-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/29-1024.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">John Doe</h2>
+                  <h3 class="subtitle is-6">Web Developer</h3><hr>
+                  <p>Email: john.doe@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div><hr>
+      
+      <!--driver-->
+      <h2 class="title is-4 has-text-centered">DRIVER</h2>
+      <div class="columns is-centered">
+          <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/drivar.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">Prakash Kumar</h2>
+                  <h3 class="subtitle is-6">Drivar</h3><hr>
+                  <p>Email: Prakash@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--2nd card-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/drivar.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">Sumit Kumar</h2>
+                  <h3 class="subtitle is-6">Drivar</h3><hr>
+                  <p>Email: sumit@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--3rd-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/drivar.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">Jeevan prakas</h2>
+                  <h3 class="subtitle is-6">Driver</h3><hr>
+                  <p>Email: jp@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--4th-->
+      <div class="column is-3">
+          <div class="card">
+              <div class="card-content has-text-centered">
+                  <!-- Avatar Image -->
+                  <figure class="image is-128x128 is-inline-block">
+                      <img class="is-3by9" src="/Assests/IMG/drivar.webp" alt="Profile Avatar">
+                  </figure>
+                  <h2 class="title is-4 mt-2">Jeevan</h2>
+                  <h3 class="subtitle is-6">Driver</h3><hr>
+                  <p>Email: j@example.com</p>
+                  <p>Phone: +1234567890</p>
+
+                  <!-- Social Media Icons -->
+                  <div class="social-icons mt-3">
+                      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                          <i class="fab fa-facebook-square fa-lg"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                          <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                          <i class="fab fa-x-twitter fa-lg"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--2nd tab-->
+  <div class="tab-content" id="tab2">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="card">
+            <h2 class="subtitle is-4 has-text-centered has-text-weight-bold" >ATTENDANCE</h2><hr>
+          <!-- Attendance Table -->
+          <table class="table is-striped is-fullwidth attendance-table">
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Date</th>
+                      <th>Time In</th>
+                      <th>Time Out</th>
+                  </tr>
+              </thead>
+              <tbody id="attendanceLog">
+                  <!-- Attendance entries will appear here -->
+              </tbody>
+          </table>
+      </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="attendance-card box">
+              <div class="field">
+                  <label class="label">Staff Name</label>
+                  <div class="control">
+                      <input class="input" type="text" id="staffName" placeholder="Enter Staff Name">
+                  </div>
+              </div>
+              <div class="field">
+                  <label class="label">Position</label>
+                  <div class="control">
+                      <input class="input" type="text" id="staffPosition" placeholder="Enter Staff Position">
+                  </div>
+              </div>
+  
+              <div class="field">
+                  <div class="control">
+                      <button class="button is-primary is-outlined" id="clockIn">Clock In</button>
+                      <button class="button is-danger is-outlined" id="clockOut" style="position: absolute; bottom: 0px; right: 20px;">Clock Out</button>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  <!--3rd tab-->
+  <div class="tab-content" id="tab3">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="card">
+          <h2 class="subtitle is-4 has-text-centered has-text-weight-bold" style="padding: 10px;" >PAYMENT DETAILS</h2><hr>
+          <!-- Payroll Table -->
+        <table class="table is-striped is-fullwidth payroll-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="payrollLog">
+                <!-- Payment entries will appear here -->
+            </tbody>
+        </table>
+          </div>
+        </div>
+
+        <div class="column is-4">
+            <div class="card">
+                <div class="payroll-card box">
+                    <h2 class="subtitle has-text-centered">Payment System</h2><hr>
+                    <div class="field">
+                        <label class="label">Staff Name</label>
+                        <div class="control">
+                            <input class="input" type="text" id="staffName" placeholder="Enter Staff Name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Position</label>
+                        <div class="control">
+                            <input class="input" type="text" id="staffPosition" placeholder="Enter Staff Position">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Amount</label>
+                        <div class="control">
+                            <input class="input" type="number" id="paymentAmount" placeholder="Enter Payment Amount">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <button class="button is-primary is-outlined" id="addPayment">
+                                <i class="fas fa-plus"></i> Add Payment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+  <div class="tab-content" id="tab4">
+      <h2 class="subtitle">Content of Tab 4</h2>
+      <p>This is the content for Tab 4. You can include any HTML here.</p>
+  </div>
+  <div class="tab-content" id="tab5">
+      <h2 class="subtitle">Content of Tab 5</h2>
+      <p>This is the content for Tab 5. You can include any HTML here.</p>
+  </div>
+</div>
+
+<!-- JavaScript for Tabs -->
+<script>
+
+  // Get all tab links and contents
+  const tabs = document.querySelectorAll('.tabs li');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  // Loop through each tab link to add a click event listener
+  tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+          // Remove 'is-active' class from all tabs and hide all content
+          tabs.forEach(item => item.classList.remove('is-active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+
+          // Add 'is-active' class to clicked tab and show corresponding content
+          tab.classList.add('is-active');
+          const tabId = tab.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+      });
+  });
+
+  //attendance
+  // Store attendance records
+  let attendanceRecords = [];
+
+// Clock In event
+document.getElementById('clockIn').addEventListener('click', function() {
+    const staffName = document.getElementById('staffName').value;
+    const staffPosition = document.getElementById('staffPosition').value;
+    const date = new Date().toLocaleDateString();
+    const timeIn = new Date().toLocaleTimeString();
+
+    if (staffName && staffPosition) {
+        // Create an attendance record
+        const record = {
+            name: staffName,
+            position: staffPosition,
+            date: date,
+            timeIn: timeIn,
+            timeOut: null, // Initially set to null
+        };
+
+        // Add the record to the records array
+        attendanceRecords.push(record);
+
+        // Update the table
+        updateAttendanceTable();
+        clearInputs();
+    } else {
+        alert("Please enter both staff name and position.");
+    }
+});
+
+// Clock Out event
+document.getElementById('clockOut').addEventListener('click', function() {
+    const staffName = document.getElementById('staffName').value;
+
+    // Find the last clock-in record for the staff member
+    const lastRecord = attendanceRecords.reverse().find(record => record.name === staffName && record.timeOut === null);
+    const timeOut = new Date().toLocaleTimeString();
+
+    if (lastRecord) {
+        lastRecord.timeOut = timeOut; // Set the time out for the last record
+        updateAttendanceTable();
+        clearInputs();
+    } else {
+        alert("No clock-in record found for this staff member.");
+    }
+});
+
+// Function to update the attendance table
+function updateAttendanceTable() {
+    const logTable = document.getElementById('attendanceLog');
+    logTable.innerHTML = ''; // Clear existing table rows
+
+    attendanceRecords.forEach(record => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${record.name}</td>
+            <td>${record.position}</td>
+            <td>${record.date}</td>
+            <td>${record.timeIn || ''}</td>
+            <td>${record.timeOut || ''}</td>
+        `;
+        logTable.appendChild(row);
+    });
+}
+
+// Function to clear input fields
+function clearInputs() {
+    document.getElementById('staffName').value = '';
+    document.getElementById('staffPosition').value = '';
+}
+
+
+// Store payroll records
+let payrollRecords = [];
+
+// Add Payment event
+document.getElementById('addPayment').addEventListener('click', function() {
+    const staffName = document.getElementById('staffName').value;
+    const staffPosition = document.getElementById('staffPosition').value;
+    const paymentAmount = document.getElementById('paymentAmount').value;
+    const date = new Date().toLocaleDateString();
+
+    if (staffName && staffPosition && paymentAmount) {
+        // Create a payroll record
+        const record = {
+            name: staffName,
+            position: staffPosition,
+            date: date,
+            amount: parseFloat(paymentAmount).toFixed(2),
+        };
+
+        // Add the record to the records array
+        payrollRecords.push(record);
+
+        // Update the table
+        updatePayrollTable();
+        clearInputs();
+    } else {
+        alert("Please fill in all fields.");
+    }
+});
+
+// Function to update the payroll table
+function updatePayrollTable() {
+    const logTable = document.getElementById('payrollLog');
+    logTable.innerHTML = ''; // Clear existing table rows
+
+    payrollRecords.forEach(record => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${record.name}</td>
+            <td>${record.position}</td>
+            <td>${record.date}</td>
+            <td>${record.amount}</td>
+        `;
+        logTable.appendChild(row);
+    });
+}
+
+// Function to clear input fields
+function clearInputs() {
+    document.getElementById('staffName').value = '';
+    document.getElementById('staffPosition').value = '';
+    document.getElementById('paymentAmount').value = '';
+}
+</script>
+
+    </body>
+    </html>

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>TRANSPORT</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">TRANSPORT</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="card" style="top: 100px; padding: 10px 20px;">
+        <div class="tabs is-centered">
+            <ul>
+                <li class="is-active has-text-weight-bold" data-tab="route-info"><a>Route</a></li>
+                <li data-tab="bus-tracking" class=" has-text-weight-bold"><a>Bus Tracking</a></li>
+                <li data-tab="driver-details" class=" has-text-weight-bold"><a>Driver</a></li>
+                <li data-tab="attendance-tracking" class=" has-text-weight-bold"><a>Attendance</a></li>
+                <li data-tab="notifications" class=" has-text-weight-bold"><a>Notifications</a></li>
+                <li data-tab="fee-management" class=" has-text-weight-bold"><a>Fee</a></li>
+                <li data-tab="feedback-reporting" class=" has-text-weight-bold"><a>Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <!-- Route Information -->
+            <div class="tab-content active" id="route-info">
+
+              <section class="section">
+                <div class="container">
+                    <h1 class="title has-text-centered">Bus Routes and Schedule</h1>
+        
+                    <!-- Dropdown to select route -->
+                    <div class="field">
+                        <label class="label">Select Bus Route</label>
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select id="busRouteSelect" onchange="displayRoute()">
+                                    <option value="">Choose a route</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Add new route button -->
+                    <button class="button is-primary is-outlined" onclick="showAddRouteForm()">Add New Route</button>
+        
+                    <!-- Form to add new route -->
+                    <div id="addRouteForm" class="box is-hidden" style="margin-top: 20px;">
+                        <h2 class="subtitle">Add New Route</h2>
+                        <div class="field">
+                            <label class="label">Route Name</label>
+                            <div class="control">
+                                <input class="input" type="text" id="newRouteName" placeholder="Enter route name">
+                            </div>
+                        </div>
+        
+                        <div id="stopInputs">
+                            <!-- Add first stop input -->
+                            <div class="field is-grouped">
+                                <div class="control is-expanded">
+                                    <input class="input" type="text" placeholder="Pickup Point" id="stop1" />
+                                </div>
+                                <div class="control is-expanded">
+                                    <input class="input" type="time" id="time1" />
+                                </div>
+                            </div>
+                        </div>
+        
+                        <button class="button is-link is-outlined" onclick="addStop()" style="top: 10px;">Add Another Stop</button>
+        
+                        <button class="button is-success is-outlined" onclick="addNewRoute()" style="top: 10px;">Save Route</button>
+                    </div>
+        
+                    <!-- Table to display route details -->
+                    <div id="routeDetails" class="box is-hidden">
+                        <table class="table is-fullwidth route-table">
+                            <thead>
+                                <tr>
+                                    <th>Pickup Point</th>
+                                    <th>Estimated Time</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody id="routeTableBody">
+                                <!-- Data will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Real-time Bus Tracking -->
+            <div class="tab-content" id="bus-tracking">
+              <section class="section">
+              <div class="container">
+
+    
+                <!-- Dropdown to select bus by name -->
+                <div class="field">
+                    <label class="label">Select Bus</label>
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select id="busRouteSelect" onchange="selectBusRoute()">
+                                <option value="">Choose a bus</option>
+                                <option value="502-Mahrauli">502 - Mahrauli</option>
+                                <option value="901-Mangolpuri">901 - Mangolpuri Y-Block</option>
+                                <option value="405A-Badarpur">405A - Badarpur</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Display the map -->
+                <div id="map"></div>
+    
+                <!-- Notification for bus arrival -->
+                <div id="notification" class="notification is-primary is-hidden">
+                    <button class="delete" onclick="hideNotification()"></button>
+                    The bus is approaching your stop!
+                </div>
+            </div>
+            </section>
+
+            </div>
+
+            <!-- Driver Details -->
+            <div class="tab-content" id="driver-details">
+              <section class="section">
+                <div class="container">
+        
+                    <!-- Add Driver Button -->
+                    <div class="has-text-centered">
+                        <button class="button is-primary is-outlined" onclick="showAddDriverForm()" style="position: absolute; top: -45px; right: 15px;">Add Driver</button>
+                    </div>
+        
+                    <!-- Add Driver Form (Initially hidden) -->
+                    <div id="addDriverForm" class="box is-hidden">
+                        <h2 class="subtitle">Add New Driver</h2>
+                        <form id="driverForm">
+                            <div class="field">
+                                <label class="label">Driver Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="driverName" placeholder="Enter driver name" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Contact Number</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="driverContact" placeholder="Enter contact number" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Emergency Number</label>
+                                <div class="control">
+                                    <input class="input" type="text" id="driverEmergency" placeholder="Enter emergency number" required>
+                                </div>
+                            </div>
+                            <div class="field has-text-centered">
+                                <button type="button" class="button is-success is-outlined" onclick="addDriver()">Add Driver</button>
+                            </div>
+                        </form>
+                    </div>
+        
+                    <!-- Driver Information Table -->
+                    <table class="table is-fullwidth is-striped is-hoverable">
+                        <thead>
+                            <tr>
+                                <th>Driver Name</th>
+                                <th>Contact Number</th>
+                                <th>Emergency Number</th>
+                            </tr>
+                        </thead>
+                        <tbody id="driverTableBody">
+                            <!-- Predefined driver rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            </div>
+
+            <!-- Attendance Tracking -->
+            <div class="tab-content" id="attendance-tracking">
+
+                <div class="container">
+
+                    <!-- Search Bar -->
+                    <div class="field search-bar">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Search by student name..." id="searchInput" onkeyup="filterStudents()">
+                            <span class="icon is-left">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+        
+                    <!-- Student Attendance Table -->
+                    <table class="table is-fullwidth is-striped is-hoverable attendance-table">
+                        <thead>
+                            <tr style="background-color: #0E1E3E;">
+                                <th style="color: white;">Student Name</th>
+                                <th style="color: white;">Status</th>
+                                <th style="color: white;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody">
+                            <!-- Students' rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- Notifications -->
+            <div class="tab-content" id="notifications">
+        
+        <div class="field">
+            <label class="label">Select Bus Route</label>
+            <div class="control">
+                <div class="select">
+                    <select id="busRoute">
+                        <option value="405A">405A - Badarpur Terminal</option>
+                        <option value="901">901 - Mangolpuri Y-Block</option>
+                        <option value="ISBT">ISBT Kashmiri Gate</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="field">
+            <button class="button is-primary is-outlined" id="checkAlerts">Check Alerts</button>
+        </div>
+
+        <div class="notification is-info" id="alertMessage" style="display: none; position: absolute; top: 100px; width:50%;">
+            <button class="delete"></button>
+            <span id="alertText"></span>
+        </div>
+
+        <table class="table is-fullwidth is-striped is-hoverable">
+            <thead>
+                <tr>
+                    <th>Bus Route</th>
+                    <th>GPS Location</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="alertTableBody">
+                <!-- Alert entries will be injected here -->
+            </tbody>
+        </table>
+    </div>
+
+            </div>
+
+            <!-- Fee Management -->
+            <div class="tab-content" id="fee-management">
+
+                <section class="section">
+                    <div class="container">
+                      <h1 class="title has-text-centered">Payment</h1><hr>
+                      
+                      <div class="box">
+                        <p class="subtitle has-text-centered">View and Pay your transport fees.</p>
+                
+                        <!-- Fee Details -->
+                        <div class="field">
+                          <label class="label">Fee Amount:</label>
+                          <div class="control">
+                            <input class="input" type="text" id="feeAmount" value="₹2000" readonly>
+                          </div>
+                        </div>
+                
+                        <!-- Payment Section -->
+                        <div class="field">
+                          <label class="label">Card Number</label>
+                          <div class="control">
+                            <input class="input" type="text" id="cardNumber" placeholder="Enter your card number">
+                          </div>
+                        </div>
+                
+                        <div class="field">
+                          <label class="label">Expiry Date</label>
+                          <div class="control">
+                            <input class="input" type="text" id="expiryDate" placeholder="MM/YY">
+                          </div>
+                        </div>
+                
+                        <div class="field">
+                          <label class="label">CVV</label>
+                          <div class="control">
+                            <input class="input" type="text" id="cvv" placeholder="CVV">
+                          </div>
+                        </div>
+                
+                        <div class="field">
+                          <button class="button is-primary is-outlined" id="payBtn">Pay Now</button>
+                        </div>
+                      </div>
+                
+                      <!-- Receipt Section -->
+                      <div class="notification is-success is-hidden" id="receiptSection">
+                        <h2 class="title is-4">Payment Successful!</h2>
+                        <p>Your payment of <strong id="paidAmount">₹2000</strong> has been received.</p>
+                        <button class="button is-link is-outlined" id="downloadReceiptBtn">Download Receipt</button>
+                      </div>
+                
+                    </div>
+                  </section>
+
+            </div>
+
+            <!-- Feedback & Reporting -->
+            <div class="tab-content" id="feedback-reporting">
+                    <div class="container">
+                      <!-- Feedback Table -->
+                      <table class="table is-fullwidth is-striped is-hoverable">
+                        <thead>
+                          <tr style="background-color: #0E1E3E;">
+                            <th style="color: white;">User Type</th>
+                            <th style="color: white;">Name</th>
+                            <th style="color: white;">Email</th>
+                            <th style="color: white;">Feedback Type</th>
+                            <th style="color: white;">Description</th>
+                            <th style="color: white;">Reply</th>
+                            <th style="color: white;">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody id="feedbackTableBody">
+                          <!-- Feedback rows will be inserted here dynamically using JavaScript -->
+                        </tbody>
+                      </table>
+                
+                      <!-- Notification for empty feedback -->
+                      <div class="notification is-warning is-hidden" id="emptyMessage">
+                        No feedback available.
+                      </div>
+                    </div>
+
+                
+                  <!-- Reply Modal -->
+                  <div class="modal" id="replyModal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                      <header class="modal-card-head">
+                        <p class="modal-card-title">Reply to Feedback</p>
+                        <button class="delete" aria-label="close" id="closeModal"></button>
+                      </header>
+                      <section class="modal-card-body">
+                        <div class="field">
+                          <label class="label">Your Reply</label>
+                          <div class="control">
+                            <textarea class="textarea" id="replyText" placeholder="Write your reply here..."></textarea>
+                          </div>
+                        </div>
+                      </section>
+                      <footer class="modal-card-foot">
+                        <button class="button is-success is-outlined" id="submitReply">Submit Reply</button>
+                        <button class="button" id="cancelReply">Cancel</button>
+                      </footer>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabs = document.querySelectorAll('.tabs ul li');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                tabs.forEach(item => item.classList.remove('is-active'));
+                // Add active class to the clicked tab
+                tab.classList.add('is-active');
+
+                // Hide all tab contents
+                tabContents.forEach(content => content.classList.remove('active'));
+                // Show the content associated with the clicked tab
+                const activeTabContent = document.getElementById(tab.getAttribute('data-tab'));
+                activeTabContent.classList.add('active');
+            });
+        });
+    });
+
+    //frst tab
+    const busRoutes = {};  // Stores bus routes
+        let stopCount = 1;     // Keeps track of the number of stops
+
+        // Function to update route dropdown
+        function updateRouteDropdown() {
+            const routeSelect = document.getElementById('busRouteSelect');
+            routeSelect.innerHTML = `<option value="">Choose a route</option>`;
+            for (const route in busRoutes) {
+                routeSelect.innerHTML += `<option value="${route}">${route}</option>`;
+            }
+        }
+
+        // Function to display the selected route
+        function displayRoute() {
+            const routeSelect = document.getElementById("busRouteSelect");
+            const selectedRoute = routeSelect.value;
+            const tableBody = document.getElementById("routeTableBody");
+            tableBody.innerHTML = '';  // Clear previous data
+
+            if (selectedRoute && busRoutes[selectedRoute]) {
+                document.getElementById('routeDetails').classList.remove('is-hidden');
+                busRoutes[selectedRoute].forEach((stop, index) => {
+                    const row = `<tr>
+                        <td>${stop.pickup}</td>
+                        <td>${stop.time}</td>
+                        <td><button class="button is-outlined is-warning" onclick="editStop('${selectedRoute}', ${index})"></button></td>
+                    </tr>`;
+                    tableBody.innerHTML += row;
+                });
+            }
+        }
+
+        // Show the form to add a new route
+        function showAddRouteForm() {
+            document.getElementById('addRouteForm').classList.remove('is-hidden');
+        }
+
+        // Add a new stop input field
+        function addStop() {
+            stopCount++;
+            const stopInputs = document.getElementById("stopInputs");
+            const newStop = `
+                <div class="field is-grouped">
+                    <div class="control is-expanded">
+                        <input class="input" type="text" placeholder="Pickup Point" id="stop${stopCount}" />
+                    </div>
+                    <div class="control is-expanded">
+                        <input class="input" type="time" id="time${stopCount}" />
+                    </div>
+                </div>
+            `;
+            stopInputs.innerHTML += newStop;
+        }
+
+        // Add new route to the list
+        function addNewRoute() {
+            const routeName = document.getElementById("newRouteName").value;
+            if (!routeName) {
+                alert("Please enter a route name");
+                return;
+            }
+
+            const stops = [];
+            for (let i = 1; i <= stopCount; i++) {
+                const stopName = document.getElementById(`stop${i}`).value;
+                const stopTime = document.getElementById(`time${i}`).value;
+                if (stopName && stopTime) {
+                    stops.push({ pickup: stopName, time: stopTime });
+                }
+            }
+
+            if (stops.length === 0) {
+                alert("Please add at least one stop.");
+                return;
+            }
+
+            busRoutes[routeName] = stops;
+            updateRouteDropdown();
+            clearForm();
+            document.getElementById('addRouteForm').classList.add('is-hidden');
+            document.getElementById('routeDetails').classList.add('is-hidden');
+        }
+
+        // Clear form after adding new route
+        function clearForm() {
+            document.getElementById("newRouteName").value = '';
+            document.getElementById("stopInputs").innerHTML = `
+                <div class="field is-grouped">
+                    <div class="control is-expanded">
+                        <input class="input" type="text" placeholder="Pickup Point" id="stop1" />
+                    </div>
+                    <div class="control is-expanded">
+                        <input class="input" type="time" id="time1" />
+                    </div>
+                </div>
+            `;
+            stopCount = 1;
+        }
+
+        // Edit a specific stop
+        function editStop(route, index) {
+            const stop = busRoutes[route][index];
+            const newPickup = prompt("Edit Pickup Point", stop.pickup);
+            const newTime = prompt("Edit Time", stop.time);
+            
+            if (newPickup && newTime) {
+                busRoutes[route][index] = { pickup: newPickup, time: newTime };
+                displayRoute();
+            }
+        }
+
+//scnd tab
+let map, busMarker, busRoute, notificationTimeout;
+        const busRoutes1 = {
+            '502-Mahrauli': [
+                { stop: 'Qutub Minar', lat: 28.5245, lng: 77.1855 },
+                { stop: 'Chhatarpur', lat: 28.5151, lng: 77.1881 },
+                { stop: 'Mahrauli', lat: 28.5261, lng: 77.1667 }
+            ],
+            '901-Mangolpuri': [
+                { stop: 'Peeragarhi', lat: 28.6790, lng: 77.0882 },
+                { stop: 'Paschim Vihar', lat: 28.6784, lng: 77.0955 },
+                { stop: 'Mangolpuri Y-Block', lat: 28.6928, lng: 77.0919 }
+            ],
+            '405A-Badarpur': [
+                { stop: 'Saket', lat: 28.5273, lng: 77.2066 },
+                { stop: 'Kalkaji', lat: 28.5494, lng: 77.2615 },
+                { stop: 'Badarpur', lat: 28.5069, lng: 77.2755 }
+            ]
+        };
+
+        const busPosition = { lat: 28.6139, lng: 77.2090 };  // Initial simulated bus starting position
+        const updateFrequency = 2000;  // Update bus position every 2 seconds
+
+        // Initialize the map
+        function initMap() {
+            map = L.map('map').setView([busPosition.lat, busPosition.lng], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            busMarker = L.marker([busPosition.lat, busPosition.lng]).addTo(map)
+                .bindPopup('Bus is here').openPopup();
+        }
+
+        // Update the bus position (simulated movement)
+        function updateBusPosition() {
+            if (!busRoute) return;
+
+            // Simulate bus moving to the next stop by changing the lat and lng
+            let nextStop = busRoute.shift();
+            if (nextStop) {
+                busMarker.setLatLng([nextStop.lat, nextStop.lng]).update();
+                busMarker.getPopup().setContent(`Bus is at ${nextStop.stop}`).openOn(map);
+
+                // Check if bus is approaching a stop (within a small radius)
+                checkArrivalNotification(nextStop);
+            }
+
+            // Repeat the function until all stops are done
+            if (busRoute.length > 0) {
+                setTimeout(updateBusPosition, updateFrequency);
+            }
+        }
+
+        // Check if the bus is near the next stop and trigger notification
+        function checkArrivalNotification(stop) {
+            const distanceToStop = Math.sqrt(Math.pow(stop.lat - busMarker.getLatLng().lat, 2) + Math.pow(stop.lng - busMarker.getLatLng().lng, 2));
+
+            // Notify when the bus is very close (simulating GPS notification)
+            if (distanceToStop < 0.01) {
+                showNotification();
+            }
+        }
+
+        // Show notification
+        function showNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.remove('is-hidden');
+
+            // Automatically hide notification after 5 seconds
+            if (notificationTimeout) clearTimeout(notificationTimeout);
+            notificationTimeout = setTimeout(hideNotification, 5000);
+        }
+
+        // Hide notification
+        function hideNotification() {
+            document.getElementById('notification').classList.add('is-hidden');
+        }
+
+        // Select route by bus name and start tracking
+        function selectBusRoute() {
+            const selectedRoute = document.getElementById('busRouteSelect').value;
+            if (selectedRoute && busRoutes1[selectedRoute]) {
+                busRoute = [...busRoutes1[selectedRoute]];  // Copy the selected route
+
+                // Center map on the first stop
+                const firstStop = busRoute[0];
+                map.setView([firstStop.lat, firstStop.lng], 13);
+
+                // Start updating the bus position
+                updateBusPosition();
+            }
+        }
+
+        // Initialize the map when the page loads
+        window.onload = initMap;
+
+         // Predefined driver data
+         const initialDrivers = [
+            { name: "John Doe", contact: "123-456-7890", emergency: "987-654-3210" },
+            { name: "Jane Smith", contact: "555-123-4567", emergency: "555-987-6543" },
+            { name: "Sam Johnson", contact: "789-456-1230", emergency: "321-654-9870" }
+        ];
+
+        // Function to load predefined drivers into the table
+        function loadDrivers() {
+            const driverTableBody = document.getElementById('driverTableBody');
+            initialDrivers.forEach(driver => {
+                const driverRow = `
+                    <tr>
+                        <td>${driver.name}</td>
+                        <td>${driver.contact}</td>
+                        <td>${driver.emergency}</td>
+                    </tr>
+                `;
+                driverTableBody.insertAdjacentHTML('beforeend', driverRow);
+            });
+        }
+
+        // Show the Add Driver Form
+        function showAddDriverForm() {
+            document.getElementById('addDriverForm').classList.toggle('is-hidden');
+        }
+
+        // Add Driver Function
+        function addDriver() {
+            const driverName = document.getElementById('driverName').value;
+            const driverContact = document.getElementById('driverContact').value;
+        
+            const driverEmergency = document.getElementById('driverEmergency').value;
+
+            // Validate form fields
+            if (!driverName || !driverContact || !driverEmergency) {
+                alert('Please fill in all the fields.');
+                return;
+            }
+
+            // Create a new row for the driver
+            const driverRow = `
+                <tr>
+                    <td>${driverName}</td>
+                    <td>${driverContact}</td>
+                    <td>${driverEmergency}</td>
+                </tr>
+            `;
+
+            // Add the row to the table
+            const driverTableBody = document.getElementById('driverTableBody');
+            driverTableBody.insertAdjacentHTML('beforeend', driverRow);
+
+            // Clear the form fields
+            document.getElementById('driverForm').reset();
+            showAddDriverForm();
+        }
+
+        // Load initial driver data when the page loads
+        window.onload = loadDrivers;
+
+  //3rd tab
+  // Array of students with their attendance status
+  const students = [
+            { name: "Mohammed Ali", status: "Not entered" },
+            { name: "Aisha Khan", status: "Not entered" },
+            { name: "Farhan Ansari", status: "Not entered" },
+            { name: "Zainab Sheikh", status: "Not entered" },
+            { name: "Rehan Patel", status: "Not entered" },
+            { name: "Fatima Begum", status: "Not entered" },
+            { name: "Omar Siddiqui", status: "Not entered" },
+            { name: "Sana Hussain", status: "Not entered" },
+            { name: "Imran Malik", status: "Not entered" },
+            { name: "Nida Rahman", status: "Not entered" }
+        ];
+
+        // Function to load the student list into the table
+        function loadStudents() {
+            const studentTableBody = document.getElementById('studentTableBody');
+            studentTableBody.innerHTML = ''; // Clear the table body
+
+            students.forEach((student, index) => {
+                const statusClass = student.status === "Entered the bus" ? 'status-entered' : 'status-not-entered';
+                const studentRow = `
+                    <tr id="student-row-${index}">
+                        <td>${student.name}</td>
+                        <td class="${statusClass}" id="status-${index}">${student.status}</td>
+                        <td>
+                            <button class="button is-success is-outlined" onclick="markAttendance(${index})">Enter Bus</button>
+                            <button class="button is-info is-outlined" onclick="markExisting(${index})">Existing</button>
+                        </td>
+                    </tr>
+                `;
+                studentTableBody.insertAdjacentHTML('beforeend', studentRow);
+            });
+        }
+
+        // Function to mark attendance as entered
+        function markAttendance(index) {
+            const statusCell = document.getElementById(`status-${index}`);
+            const student = students[index];
+
+            // Update status to "Entered the bus"
+            student.status = 'Entered the bus';
+            statusCell.textContent = student.status; // Update status in the table
+            statusCell.classList.remove('status-not-entered');
+            statusCell.classList.add('status-entered'); // Change color
+        }
+
+        // Function to mark attendance as existing
+        function markExisting(index) {
+            const statusCell = document.getElementById(`status-${index}`);
+            const student = students[index];
+
+            // Update status to "Already on the bus"
+            student.status = 'Already on the bus';
+            statusCell.textContent = student.status; // Update status in the table
+            statusCell.classList.remove('status-not-entered');
+            statusCell.classList.add('status-entered'); // Change color
+        }
+
+        // Function to filter students by name
+        function filterStudents() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("studentTableBody");
+            const rows = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < rows.length; i++) {
+                const studentName = rows[i].getElementsByTagName("td")[0];
+                if (studentName) {
+                    const txtValue = studentName.textContent || studentName.innerText;
+                    rows[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+                }
+            }
+        }
+
+        // Load student data when the page loads
+        window.onload = loadStudents;
+
+  //notification
+  // Sample alerts data with GPS for specific bus routes
+  const alertsData = {
+            '405A': {
+                gps: "28.5632° N, 77.2904° E",
+                status: "Delayed by 10 minutes due to traffic."
+            },
+            '901': {
+                gps: "28.6824° N, 77.1055° E",
+                status: "Canceled due to mechanical issues."
+            },
+            'ISBT': {
+                gps: "28.6565° N, 77.2410° E",
+                status: "Route change. Please check the updated route."
+            }
+        };
+
+        // Function to check alerts
+        document.getElementById('checkAlerts').onclick = function() {
+            const selectedRoute = document.getElementById('busRoute').value;
+            const alertInfo = alertsData[selectedRoute];
+            const alertTableBody = document.getElementById('alertTableBody');
+            const alertMessage = document.getElementById('alertMessage');
+            const alertTextElement = document.getElementById('alertText');
+
+            // Clear previous table data
+            alertTableBody.innerHTML = '';
+
+            if (alertInfo) {
+                // Show alert message
+                alertTextElement.textContent = alertInfo.status;
+                alertMessage.style.display = 'block';
+
+                // Insert alert data into table
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${selectedRoute} - ${selectedRoute === '405A' ? 'Badarpur Terminal' : selectedRoute === '901' ? 'Mangolpuri Y-Block' : 'ISBT Kashmiri Gate'}</td>
+                    <td>${alertInfo.gps}</td>
+                    <td>${alertInfo.status}</td>
+                `;
+                alertTableBody.appendChild(row);
+            } else {
+                alertMessage.style.display = 'none'; // Hide alert if no data
+            }
+        };
+
+        // Close alert message
+        document.querySelector('.delete').onclick = function() {
+            document.getElementById('alertMessage').style.display = 'none';
+        };
+
+//Fee of transport
+
+document.addEventListener('DOMContentLoaded', () => {
+      const payBtn = document.getElementById('payBtn');
+      const receiptSection = document.getElementById('receiptSection');
+      const downloadReceiptBtn = document.getElementById('downloadReceiptBtn');
+      const paidAmount = document.getElementById('paidAmount');
+
+      payBtn.addEventListener('click', () => {
+        // Simulate payment process
+        const cardNumber = document.getElementById('cardNumber').value;
+        const expiryDate = document.getElementById('expiryDate').value;
+        const cvv = document.getElementById('cvv').value;
+        const feeAmount = document.getElementById('feeAmount').value;
+
+        if (cardNumber && expiryDate && cvv) {
+          // Show the receipt section
+          receiptSection.classList.remove('is-hidden');
+          paidAmount.textContent = feeAmount;
+
+          // Clear payment inputs
+          document.getElementById('cardNumber').value = '';
+          document.getElementById('expiryDate').value = '';
+          document.getElementById('cvv').value = '';
+        } else {
+          alert('Please fill in all payment details.');
+        }
+      });
+
+      downloadReceiptBtn.addEventListener('click', () => {
+        // Create and download a simple receipt
+        const receiptContent = `
+          Payment Receipt\n
+          Amount Paid: ₹2000\n
+          Payment Date: ${new Date().toLocaleDateString()}\n
+          Thank you for your payment!
+        `;
+
+        const blob = new Blob([receiptContent], { type: 'text/plain' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'receipt.txt';
+        link.click();
+      });
+    });
+
+//feedback
+document.addEventListener('DOMContentLoaded', () => {
+      // Sample feedback data (can be replaced with data from a server)
+      const feedbackData = [
+        {
+          userType: 'Student',
+          name: 'John Doe',
+          email: 'john@student.com',
+          feedbackType: 'Issue',
+          description: 'The bus arrived late by 30 minutes today.',
+          reply: ''
+        },
+        {
+          userType: 'Parent',
+          name: 'Jane Doe',
+          email: 'jane@parent.com',
+          feedbackType: 'Feedback',
+          description: 'The driver was very courteous and drove safely.',
+          reply: ''
+        },
+        {
+          userType: 'Driver',
+          name: 'Driver Mike',
+          email: 'mike@driver.com',
+          feedbackType: 'Issue',
+          description: 'Traffic congestion caused delays. Consider route adjustments.',
+          reply: ''
+        }
+      ];
+
+      const feedbackTableBody = document.getElementById('feedbackTableBody');
+      const emptyMessage = document.getElementById('emptyMessage');
+      const replyModal = document.getElementById('replyModal');
+      const replyText = document.getElementById('replyText');
+      let currentReplyIndex = null; // To track the feedback being replied to
+
+      // Function to populate feedback table
+      function populateFeedbackTable() {
+        // Clear previous content
+        feedbackTableBody.innerHTML = '';
+
+        // Check if there is feedback data
+        if (feedbackData.length === 0) {
+          emptyMessage.classList.remove('is-hidden');
+        } else {
+          emptyMessage.classList.add('is-hidden');
+          feedbackData.forEach((feedback, index) => {
+            feedbackTableBody.innerHTML += `
+              <tr>
+                <td>${feedback.userType}</td>
+                <td>${feedback.name}</td>
+                <td>${feedback.email}</td>
+                <td>${feedback.feedbackType}</td>
+                <td>${feedback.description}</td>
+                <td>${feedback.reply ? feedback.reply : '<em>No reply yet</em>'}</td>
+                <td>
+                  <button class="button is-link is-outlined" onclick="openReplyModal(${index})">
+                    <span class="icon"><i class="fas fa-reply"></i></span> <span>Reply</span>
+                  </button>
+                  <button class="button is-danger is-outlined" onclick="deleteFeedback(${index})">
+                    <span class="icon"><i class="fas fa-trash"></i></span> <span>Delete</span>
+                  </button>
+                </td>
+              </tr>
+            `;
+          });
+        }
+      }
+
+      // Function to open reply modal
+      window.openReplyModal = (index) => {
+        currentReplyIndex = index;
+        replyText.value = feedbackData[index].reply || ''; // Set existing reply if available
+        replyModal.classList.add('is-active');
+      };
+
+      // Function to delete feedback
+      window.deleteFeedback = (index) => {
+        feedbackData.splice(index, 1); // Remove feedback from the array
+        populateFeedbackTable();  // Re-render the table after deletion
+      };
+
+      // Close the reply modal
+      document.getElementById('closeModal').addEventListener('click', () => {
+        replyModal.classList.remove('is-active');
+      });
+
+      // Cancel reply and close modal
+      document.getElementById('cancelReply').addEventListener('click', () => {
+        replyModal.classList.remove('is-active');
+      });
+
+      // Submit reply and update the feedback data
+      document.getElementById('submitReply').addEventListener('click', () => {
+        if (currentReplyIndex !== null) {
+          feedbackData[currentReplyIndex].reply = replyText.value;
+          replyModal.classList.remove('is-active');
+          populateFeedbackTable(); // Update table with the new reply
+        }
+      });
+
+      // Initial population of the feedback table
+      populateFeedbackTable();
+    });
+
+</script>
+
+<!-- Include Leaflet.js for the map (open-source map library) -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    </body>
+    </html>

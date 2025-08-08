@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>FEE</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">FEE</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="card" style="top: 100px;">
+      <h1 class="title has-text-centered">Fee Management</h1><hr>
+
+      <!-- Fee Table -->
+      <table class="table is-fullwidth is-striped is-hoverable">
+        <thead>
+          <tr style="background-color: #0E1E3E;">
+            <th style="color: white;">Fee Type</th>
+            <th style="color: white;">Description</th>
+            <th style="color: white;">Amount (₹)</th>
+            <th style="color: white;">Due Date</th>
+            <th style="color: white;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="feeTableBody">
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+
+      <!-- Notification for empty list -->
+      <div class="notification is-warning is-hidden" id="emptyMessage">
+        No fees available.
+      </div>
+    </div>
+
+  <!-- Payment Modal -->
+  <div class="modal" id="paymentModal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Payment Gateway</p>
+        <button class="delete" aria-label="close" id="closeModal"></button>
+      </header>
+      <section class="modal-card-body">
+        <p class="has-text-info">You are about to pay for <strong id="feeTypeLabel"></strong>.</p>
+        <p>Amount: <strong>₹<span id="feeAmountLabel"></span></strong></p>
+        <p>Due Date: <strong id="feeDueDateLabel"></strong></p>
+
+        <div class="field">
+          <label class="label">Payment Method</label>
+          <div class="control">
+            <div class="select">
+              <select id="paymentMethod">
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="net-banking">Net Banking</option>
+                <option value="upi">UPI</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Card/UPI Number</label>
+          <div class="control">
+            <input class="input" type="text" id="paymentDetails" placeholder="Enter Card/UPI Number">
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success is-outlined" id="confirmPayment">Confirm Payment</button>
+        <button class="button" id="cancelPayment">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Sample data (can be replaced with data from a server)
+      const feeData = [
+        {
+          feeType: 'Monthly Fee',
+          description: 'School monthly fee for October 2024',
+          amount: '5000',
+          dueDate: '2024-10-25'
+        },
+        {
+          feeType: 'Exam Fee',
+          description: 'Semester exam fee for December 2024',
+          amount: '1500',
+          dueDate: '2024-11-30'
+        },
+        {
+          feeType: 'Activity Fee',
+          description: 'Annual sports and cultural event fee',
+          amount: '1200',
+          dueDate: '2024-12-15'
+        }
+      ];
+
+      const feeTableBody = document.getElementById('feeTableBody');
+      const emptyMessage = document.getElementById('emptyMessage');
+      const paymentModal = document.getElementById('paymentModal');
+      const feeTypeLabel = document.getElementById('feeTypeLabel');
+      const feeAmountLabel = document.getElementById('feeAmountLabel');
+      const feeDueDateLabel = document.getElementById('feeDueDateLabel');
+      const paymentMethod = document.getElementById('paymentMethod');
+      const paymentDetails = document.getElementById('paymentDetails');
+      let currentFee = null;
+
+      // Populate fee table
+      function populateTable() {
+        feeTableBody.innerHTML = '';
+
+        if (feeData.length === 0) {
+          emptyMessage.classList.remove('is-hidden');
+        } else {
+          emptyMessage.classList.add('is-hidden');
+          feeData.forEach((fee, index) => {
+            feeTableBody.innerHTML += `
+              <tr>
+                <td>${fee.feeType}</td>
+                <td>${fee.description}</td>
+                <td>${fee.amount}</td>
+                <td>${fee.dueDate}</td>
+                <td>
+                  <button class="button is-outlined is-success" onclick="makePayment(${index})">
+                    <span class="icon"><i class="fas fa-credit-card"></i></span> <span>Pay Now</span>
+                  </button>
+                </td>
+              </tr>
+            `;
+          });
+        }
+      }
+
+      // Show Payment Modal
+      window.makePayment = (index) => {
+        currentFee = feeData[index];
+        feeTypeLabel.textContent = currentFee.feeType;
+        feeAmountLabel.textContent = currentFee.amount;
+        feeDueDateLabel.textContent = currentFee.dueDate;
+        paymentModal.classList.add('is-active');
+      };
+
+      // Close Modal
+      document.getElementById('closeModal').addEventListener('click', () => {
+        paymentModal.classList.remove('is-active');
+      });
+
+      document.getElementById('cancelPayment').addEventListener('click', () => {
+        paymentModal.classList.remove('is-active');
+      });
+
+      // Confirm Payment
+      document.getElementById('confirmPayment').addEventListener('click', () => {
+        const paymentDetailsValue = paymentDetails.value.trim();
+        if (paymentDetailsValue === '') {
+          alert('Please enter payment details.');
+        } else {
+          alert(`Payment of ₹${currentFee.amount} for ${currentFee.feeType} is successful!`);
+          paymentModal.classList.remove('is-active');
+        }
+      });
+
+      // Initial population of the table
+      populateTable();
+    });
+  </script>
+
+    </body>
+    </html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">DASHBOARD</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header><br><br><br><br>
+          <!--header end-->
+
+          <!--card start-->
+          <div class="columns">
+            <div class="column is-3">
+              <div class="card">
+                <div class="card-content" style="position: relative;">
+                  <div style="position: absolute; top: 25px; left: 20px;"><p class="title is-4">Teacher</p></div>
+                  
+                  <div style="position: absolute; top: 10px; right: 20px;">
+                    <span><i class="fas fa-user-tie fa-3x"></i></span>
+                </div><br><hr>
+                <div style="position: absolute; bottom: 10px; left: 20px;">
+                  <p class="title is-3" id="number1">0</p>
+                </div>
+                <div style="position: absolute; bottom: 10px; right: 30px;">
+                  <span style="background-color: red; padding: 5px; color: white; border-radius: 5px;"><i class="fas fa-chart-line"> 12.4%</i></span>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-3">
+              <div class="card">
+                <div class="card-content" style="position: relative;">
+                  <div style="position: absolute; top: 25px; left: 20px;"><p class="title is-4">Student</p></div>
+                  <div style="position: absolute; top: 10px; right: 20px;">
+                    <span><i class="fas fa-user-graduate fa-3x" style="color: #23c55e;"></i></span>
+                </div><br><hr>
+                <div style="position: absolute; bottom: 10px; left: 20px;">
+                  <p class="title is-3" id="number2">0</p>
+                </div>
+                <div style="position: absolute; bottom: 10px; right: 30px;">
+                  <span style="background-color: green; padding: 5px; color: white; border-radius: 5px;"><i class="fas fa-chart-line"> 89.7%</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="column is-3">
+              <div class="card">
+                <div class="card-content" style="position: relative;">
+                  <div style="position: absolute; top: 25px; left: 20px;"><p class="title is-4">Employee</p></div>
+                  <div style="position: absolute; top: 10px; right: 20px;">
+                    <span><i class="fas fa-users fa-3x" style="color: #7439e8;"></i></span>
+                </div><br><hr>
+                <div style="position: absolute; bottom: 10px; left: 20px;">
+                  <p class="title is-3" id="number3">0</p>
+                </div>
+                <div style="position: absolute; bottom: 10px; right: 30px;">
+                  <span style="background-color: tomato; padding: 5px; color: white; border-radius: 5px;"><i class="fas fa-chart-line"> 85.9%</i></span>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-3">
+              <div class="card">
+                <div class="card-content" style="position: relative;">
+                  <div style="position: absolute; top: 25px; left: 20px;"><p class="title is-4">Earning</p></div>
+                  <div style="position: absolute; top: 10px; right: 20px;">
+                    <span><i class="fas fa-coins fa-3x" style="color: #FE784A;"></i></span>
+                </div><br><hr>
+                <div style="position: absolute; bottom: 10px; left: 20px;">
+                  <p class="title is-3" id="number4">&#8377; 0</p>
+                </div>
+                <div style="position: absolute; bottom: 10px; right: 30px;">
+                  <span style="background-color: green; padding: 5px; color: white; border-radius: 5px;"><i class="fas fa-chart-line"> 99.4%</i></span>
+                </div>
+                </div>
+              </div>
+          </div>
+          </div>
+
+          <div class="columns">
+            <div class="column is-8">
+              <div class="card">
+              <div class="container" style="width: 100%; margin: 0 auto;">
+                <h2 class=" title is-4 has-text-centered" style="padding-top: 15px;">Payments Overview</h2><hr>
+                <select id="time-period" onchange="updateChart()" style="position: absolute; top: 15px; right: 10px; border: none;">
+                    <option value="weekly" style="font-weight: bold; font-size:15px;">Weekly</option>
+                    <option value="monthly" style="font-weight: bold; font-size:15px;">Monthly</option>
+                    <option value="yearly" style="font-weight: bold; font-size:15px;">Yearly</option>
+                </select>
+            
+                <canvas id="paymentChart" style="margin: 20px 0;"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+            <div class="card" style="padding-bottom: 10px;">
+              <div class="container" style="text-align: center;">
+                <h1 class=" title is-4 has-text-centered" style="padding-top: 15px;">Students</h1><hr>
+                <canvas id="myDoughnutChart" width="400" height="400"></canvas>
+            </div>
+            </div>  
+        </div>
+      </div>
+      <!--notice board-->
+      <div class="columns">
+        <div class="column is-8">
+          <div class="card" style="padding: 20px;">
+                <h1 class="title is-4 has-text-centered" style="padding-top: 15px;"> <i class="far fa-clipboard" style="font-size: 35px;"></i> Notice Board</h1>
+                <div class="button" style="position: absolute; top: 15px; right: 10px;">View More  <i class="fas fa-arrow-right" style="padding-left: 10px;"></i></div>
+                <hr>
+                <table class="table is-fullwidth is-hoverable">
+                    <thead style="background-color: #0E1E3E;">
+                        <tr>
+                          <th style="color: white;">#</th>
+                            <th style="color: white;">Date</th>
+                            <th style="color: white;">Notice</th>
+                            <th style="color: white;">Posted By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>01</td>
+                            <td>2024-10-01</td>
+                            <td>Parent-Teacher Meeting</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                            <td>2024-10-05</td>
+                            <td>Science Fair</td>
+                            <td>Science Department</td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                            <td>2024-10-10</td>
+                            <td>Sports Day</td>
+                            <td>Sports Committee</td>
+                        </tr>
+                        <tr>
+                          <td>04</td>
+                            <td>2024-10-01</td>
+                            <td>Parent-Teacher Meeting</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                          <td>05</td>
+                            <td>2024-10-05</td>
+                            <td>Science Fair</td>
+                            <td>Science Department</td>
+                        </tr>
+                        <tr>
+                          <td>06</td>
+                            <td>2024-10-10</td>
+                            <td>Sports Day</td>
+                            <td>Sports Committee</td>
+                        </tr>
+                        <tr>
+                          <td>01</td>
+                            <td>2024-10-01</td>
+                            <td>Parent-Teacher Meeting</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                            <td>2024-10-05</td>
+                            <td>Science Fair</td>
+                            <td>Science Department</td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                            <td>2024-10-10</td>
+                            <td>Sports Day</td>
+                            <td>Sports Committee</td>
+                        </tr>
+                        <tr>
+                          <td>04</td>
+                            <td>2024-10-01</td>
+                            <td>Parent-Teacher Meeting</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                          <td>05</td>
+                            <td>2024-10-05</td>
+                            <td>Science Fair</td>
+                            <td>Science Department</td>
+                        </tr>
+                        <tr>
+                          <td>06</td>
+                            <td>2024-10-10</td>
+                            <td>Sports Day</td>
+                            <td>Sports Committee</td>
+                        </tr>
+                        <tr>
+                          <td>01</td>
+                            <td>2024-10-01</td>
+                            <td>Parent-Teacher Meeting</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                            <td>2024-10-05</td>
+                            <td>Science Fair</td>
+                            <td>Science Department</td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                            <td>2024-10-05</td>
+                            <td>Science Fair</td>
+                            <td>Science Department</td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+      </div>
+
+        <div class="column is-4">
+          <div class="card">
+            <div class="container">
+              <h1 class="title is-4 has-text-centered" style="padding-top: 15px;">Calendar</h1><hr>
+              
+              <div id="event-list" class="notifications"></div><hr>
+              
+              <div class="navigation">
+                  <button id="prev-month" class="arrow-button">
+                      <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <span id="month-name" class="month-name"></span>
+                  <button id="next-month" class="arrow-button">
+                      <i class="fas fa-arrow-right"></i>
+                  </button>
+              </div>
+          
+              <div class="weekdays">
+                  <div class="weekday">Sun</div>
+                  <div class="weekday">Mon</div>
+                  <div class="weekday">Tue</div>
+                  <div class="weekday">Wed</div>
+                  <div class="weekday">Thu</div>
+                  <div class="weekday">Fri</div>
+                  <div class="weekday">Sat</div>
+              </div>
+          
+              <div id="calendar" class="box"></div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/Assests/JS/app.js"></script>
+</body>
+</html>

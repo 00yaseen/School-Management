@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Notice Board</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">NOTICE BOARD</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </nav>
+  </div>
+</header>
+<div class="card" style="top: 100px; padding: 10px 20px;">
+  <h1 class="title has-text-centered">Notice Board</h1><hr>
+  <!-- Add Notice Button -->
+  <button class="button is-primary is-outlined" id="addNoticeBtn" style="position: absolute; top: 20px; right: 20px;">
+      <span class="icon">
+          <i class="fas fa-plus"></i>
+      </span>
+      <span>Add Notice</span>
+  </button>
+
+  <!-- Notice Board Table -->
+  <table class="table is-bordered is-fullwidth" id="noticeTable">
+      <thead>
+          <tr style="background-color: #0E1E3E;">
+              <th style="color: white;">Section</th>
+              <th style="color: white;">Title</th>
+              <th style="color: white;">Date</th>
+              <th style="color: white;">Actions</th>
+          </tr>
+      </thead>
+      <tbody id="noticeBoard">
+          <!-- Pre-existing data rows -->
+          <tr>
+              <td>Teacher</td>
+              <td>Meeting with Parents</td>
+              <td>2024-10-10</td>
+              <td>
+                  <button class="button is-outlined is-danger" onclick="deleteNotice(this)">
+                      <span class="icon is-small">
+                          <i class="fas fa-trash"></i>
+                      </span>
+                      <span>Delete</span>
+                  </button>
+              </td>
+          </tr>
+          <tr>
+              <td>Student</td>
+              <td>Exam Timetable</td>
+              <td>2024-10-15</td>
+              <td>
+                  <button class="button is-outlined is-danger" onclick="deleteNotice(this)">
+                      <span class="icon is-small">
+                          <i class="fas fa-trash"></i>
+                      </span>
+                      <span>Delete</span>
+                  </button>
+              </td>
+          </tr>
+          <tr>
+              <td>Library</td>
+              <td>Book Return Deadline</td>
+              <td>2024-11-01</td>
+              <td>
+                  <button class="button is-outlined is-danger" onclick="deleteNotice(this)">
+                      <span class="icon is-small">
+                          <i class="fas fa-trash"></i>
+                      </span>
+                      <span>Delete</span>
+                  </button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+</section>
+
+<!-- Add Notice Modal -->
+<div id="addNoticeModal" class="modal">
+<div class="modal-background"></div>
+<div class="modal-content">
+  <div class="box">
+      <h2 class="title is-4">Add New Notice</h2>
+      <div class="field">
+          <label class="label">Section</label>
+          <div class="control">
+              <div class="select">
+                  <select id="noticeSection">
+                      <option>Teacher</option>
+                      <option>Student</option>
+                      <option>Fee</option>
+                      <option>Exam</option>
+                      <option>Library</option>
+                      <option>Transport</option>
+                      <option>Staff</option>
+                      <option>Parent</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+
+      <div class="field">
+          <label class="label">Title</label>
+          <div class="control">
+              <input class="input" type="text" id="noticeTitle" placeholder="Notice Title">
+          </div>
+      </div>
+
+      <div class="field">
+          <label class="label">Date</label>
+          <div class="control">
+              <input class="input" type="date" id="noticeDate">
+          </div>
+      </div>
+
+      <div class="field is-grouped">
+          <div class="control">
+              <button class="button is-link is-outlined" id="saveNotice">Save</button>
+          </div>
+          <div class="control">
+              <button class="button is-danger is-outlined" id="cancelNotice">Cancel</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('addNoticeModal');
+  const addNoticeBtn = document.getElementById('addNoticeBtn');
+  const cancelNoticeBtn = document.getElementById('cancelNotice');
+  const saveNoticeBtn = document.getElementById('saveNotice');
+  const noticeBoard = document.getElementById('noticeBoard');
+
+  // Show modal
+  addNoticeBtn.addEventListener('click', () => {
+      modal.classList.add('is-active');
+  });
+
+  // Hide modal
+  cancelNoticeBtn.addEventListener('click', () => {
+      modal.classList.remove('is-active');
+  });
+
+  // Save notice and show in the table
+  saveNoticeBtn.addEventListener('click', () => {
+      const section = document.getElementById('noticeSection').value;
+      const title = document.getElementById('noticeTitle').value;
+      const date = document.getElementById('noticeDate').value;
+
+      // Add data to the table
+      if (section && title && date) {
+          const newRow = document.createElement('tr');
+          newRow.innerHTML = `
+              <td>${section}</td>
+              <td>${title}</td>
+              <td>${date}</td>
+              <td>
+                  <button class="button is-danger" onclick="deleteNotice(this)">
+                      <span class="icon is-small">
+                          <i class="fas fa-trash"></i>
+                      </span>
+                      <span>Delete</span>
+                  </button>
+              </td>
+          `;
+          noticeBoard.appendChild(newRow);
+
+          // Hide the modal
+          modal.classList.remove('is-active');
+      } else {
+          alert('Please fill all fields.');
+      }
+  });
+});
+
+// Delete notice function
+function deleteNotice(button) {
+  const row = button.parentElement.parentElement;
+  row.remove();
+}
+</script>
+
+    </body>
+    </html>

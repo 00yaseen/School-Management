@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-image: url(/Assests/IMG/back.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            width: 400px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box box" style="width: 20%; height: 50%;">
+            <h1 class="title has-text-centered">Log-in</h1><hr>
+            <form id="loginForm">
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control">
+                        <input class="input" type="text" id="username" placeholder="Enter your username">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control">
+                        <input class="input" type="password" id="password" placeholder="Enter your password">
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="button is-info is-fullwidth is-outlined" type="button" onclick="login()">Login</button>
+                </div>
+
+                <div class="field">
+                    <a href="#">Forgot Password</a>
+                </div><hr>
+                <div >
+                    <ul style="display: flex; justify-content: center; align-items: center; ">
+                    <li><a href="#" style="font-size: 25px; padding-right: 20px;"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+                    <li><a href="#" style="font-size: 25px; padding-right: 20px;"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" style="font-size: 25px; padding-right: 20px;"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+                    <li><a href="#" style="font-size: 25px; padding-right: 20px;"><i class="fab fa-google fa-lg"></i></a></li>
+                    </ul>
+                    
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for simple login -->
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Simple check (replace this with real validation)
+            if (username === "Mo Yaseen" && password === "Yaseen9519#") {
+            
+                window.location.href = "dashboard.html"; // Replace with your actual dashboard page
+            } else {
+                alert("Incorrect username or password.");
+            }
+        }
+    </script>
+
+</body>
+</html>

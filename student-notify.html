@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <title>Student-notify</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">STUDENT</b></a>
+                </div>
+                <a href="/Assests/HTML/Admin/Add-student.html" class="head-item" >Add Student</a>
+                <a href="/Assests/HTML/Admin/Assignment.html" class="head-item" >Assignment</a>
+                <a href="/Assests/HTML/Admin/student-notify.html" class="head-item" >Notify</a>
+                <a href="/Assests/HTML/Admin/Stud-attendance.html" class="head-item" >Attandance</a>
+                <a href="/Assests/HTML/Admin/class-routine.html" class="head-item" >Class Routine</a>
+                <a href="/Assests/HTML/Admin/student-feedback.html" class="head-item" >Feedback</a>
+
+
+                <div class="nav-center" style="padding-left: 20px;">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: 5px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 100px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+</header>
+<!-- Notification Section -->
+    <div class="card" style="top: 100px; padding: 10px 20px;">
+        <h2 class="title has-text-centered">Send Notifications to Students</h2><hr>
+
+        <!-- Student Table -->
+        <table class="table is-fullwidth is-striped is-hoverable">
+            <thead>
+                <tr style="background-color: #0E1E3E; font-size: 20px;">
+                    <th style="color: white;">ID</th>
+                    <th style="color: white;">Name</th>
+                    <th style="color: white;">Gender</th>
+                    <th style="color: white;">Class</th>
+                    <th style="color: white;">Email</th>
+                    <th style="color: white;">Send Notification</th>
+                </tr>
+            </thead>
+            <tbody id="student-table-body">
+                <!-- Student rows will be inserted here via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+
+<!-- Send Notification Modal -->
+<div class="modal" id="notification-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Send Notification</p>
+            <button class="delete" aria-label="close" id="close-modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="notification-form">
+                <div class="field">
+                    <label class="label">Notification Message</label>
+                    <div class="control">
+                        <textarea class="textarea" id="notification-message" placeholder="Enter your notification message here..." required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-success is-outlined" type="submit">Send Notification</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+<!-- JavaScript to handle notifications and modal -->
+<script>
+    // Sample student data (This can be replaced with a database in real projects)
+    let students = [
+        { id: 1, name: "Alice Johnson", gender: "Female", class: "BCA", email: "alice@example.com" },
+        { id: 2, name: "Bob Smith", gender: "Male", class: "10th Grade", email: "bob@example.com" },
+        { id: 3, name: "Charlie Brown", gender: "Male", class: "BCA", email: "charlie@example.com" },
+        { id: 4, name: "Diana Prince", gender: "Female", class: "12th Grade", email: "diana@example.com" }
+    ];
+
+    // Function to load students into the table
+    function loadStudents() {
+        const studentTableBody = document.getElementById('student-table-body');
+        studentTableBody.innerHTML = ''; // Clear existing rows
+        students.forEach((student) => {
+            const row = `
+                <tr>
+                    <td>${student.id}</td>
+                    <td>${student.name}</td>
+                    <td>${student.gender}</td>
+                    <td>${student.class}</td>
+                    <td>${student.email}</td>
+                    <td>
+                        <button class="button is-outlined is-info" onclick="openNotificationModal(${student.id})">
+                            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </td>
+                </tr>
+            `;
+            studentTableBody.innerHTML += row;
+        });
+    }
+
+    // Function to open the notification modal
+    function openNotificationModal(studentId) {
+        const modal = document.getElementById('notification-modal');
+        const notificationForm = document.getElementById('notification-form');
+        const notificationMessage = document.getElementById('notification-message');
+
+        // Reset the form and set the student ID as a data attribute
+        notificationForm.setAttribute('data-student-id', studentId);
+        notificationMessage.value = ''; // Clear previous message
+        modal.classList.add('is-active'); // Show the modal
+    }
+
+    // Function to close the modal
+    const closeModal = document.getElementById('close-modal');
+    closeModal.addEventListener('click', () => {
+        const modal = document.getElementById('notification-modal');
+        modal.classList.remove('is-active'); // Hide the modal
+    });
+
+    // Handle the notification form submission
+    const notificationForm = document.getElementById('notification-form');
+    notificationForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const studentId = this.getAttribute('data-student-id');
+        const student = students.find(s => s.id == studentId);
+        const message = document.getElementById('notification-message').value;
+
+        // Here, you can add your notification sending logic (e.g., sending an email or alert)
+        alert(`Notification sent to ${student.name} (${student.email}): ${message}`);
+
+        // Close the modal and reset the form
+        const modal = document.getElementById('notification-modal');
+        modal.classList.remove('is-active');
+        notificationForm.reset();
+    });
+
+    // Load initial student data into the table
+    loadStudents();
+</script>
+
+</section>
+</body>
+</html>

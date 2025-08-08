@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Examination</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">Examination</b></a>
+                </div>
+                <div class="nav-center">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: -50px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 300px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+        <div class="card" style="top: 100px; padding: 10px 20px;">
+            <h1 class="title has-text-centered">Examination</h1><hr>
+
+            <!-- Add Exam Button -->
+            <div class="is-flex is-justify-content-space-between">
+                <button class="button is-outlined is-primary" id="addExamBtn" style="position: absolute; right: 15px; top: 15px;">
+                    <span class="icon">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                    <span>Add Exam</span>
+                </button>
+            </div>
+
+            <!-- Exams Table -->
+            <div class="table-container">
+                <table class="table is-striped is-hoverable is-fullwidth">
+                    <thead>
+                        <tr style="background-color: #0E1E3E; font-size: 20px;">
+                            <th style="color: white;">#</th>
+                            <th style="color: white;">Class</th>
+                            <th style="color: white;">Exam Name</th>
+                            <th style="color: white;">Subject</th>
+                            <th style="color: white;">Date</th>
+                            <th style="color: white;">Time</th>
+                            <th style="color: white;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="examTableBody">
+                        <!-- Table data will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Adding/Editing Exams -->
+    <div class="modal" id="examModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title" id="modalTitle">Add New Exam</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <form id="examForm">
+                    <div class="field">
+                        <label class="label">Class</label>
+                        <div class="control">
+                            <input class="input" type="text" id="examClass" placeholder="Class (e.g., 10th)">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Exam Name</label>
+                        <div class="control">
+                            <input class="input" type="text" id="examName" placeholder="Exam Name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Subject</label>
+                        <div class="control">
+                            <input class="input" type="text" id="examSubject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Date</label>
+                        <div class="control">
+                            <input class="input" type="date" id="examDate">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Time</label>
+                        <div class="control">
+                            <input class="input" type="time" id="examTime">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success is-outlined" id="saveExamBtn">Save</button>
+                <button class="button" id="cancelBtn" style="position: absolute; bottom: 30px; right: 20px;">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addExamBtn = document.getElementById('addExamBtn');
+            const examModal = document.getElementById('examModal');
+            const closeModal = document.querySelector('.delete');
+            const cancelBtn = document.getElementById('cancelBtn');
+            const saveExamBtn = document.getElementById('saveExamBtn');
+            const examTableBody = document.getElementById('examTableBody');
+            const modalTitle = document.getElementById('modalTitle');
+            let examForm = document.getElementById('examForm');
+            let isEditMode = false;
+            let currentEditIndex = null;
+
+            let exams = [
+                { class: '10th', name: 'Midterm', subject: 'Math', date: '2024-10-20', time: '10:00' },
+                { class: '9th', name: 'Final', subject: 'Science', date: '2024-10-22', time: '11:00' }
+            ];
+
+            // Function to render exam data in the table
+            function renderExams() {
+                examTableBody.innerHTML = '';
+                exams.forEach((exam, index) => {
+                    const row = `
+                        <tr>
+                            <th>${index + 1}</th>
+                            <td>${exam.class}</td>
+                            <td>${exam.name}</td>
+                            <td>${exam.subject}</td>
+                            <td>${exam.date}</td>
+                            <td>${exam.time}</td>
+                            <td>
+                                <button class="button is-outlined is-warning edit-btn" data-index="${index}">
+                                    <span class="icon">
+                                        <i class="fas fa-edit"></i>
+                                    </span>
+                                    <span>Edit</span>
+                                </button>
+                                <button class="button is-outlined is-danger delete-btn" data-index="${index}">
+                                    <span class="icon">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                    <span>Delete</span>
+                                </button>
+                            </td>
+                        </tr>`;
+                    examTableBody.innerHTML += row;
+                });
+
+                // Attach event listeners for Edit and Delete buttons after rendering
+                document.querySelectorAll('.edit-btn').forEach(button => {
+                    button.addEventListener('click', handleEditExam);
+                });
+                document.querySelectorAll('.delete-btn').forEach(button => {
+                    button.addEventListener('click', handleDeleteExam);
+                });
+            }
+
+            // Open the modal when "Add Exam" button is clicked
+            addExamBtn.addEventListener('click', () => {
+                isEditMode = false;
+                currentEditIndex = null;
+                modalTitle.innerText = "Add New Exam";
+                examForm.reset();
+                examModal.classList.add('is-active');
+            });
+
+            // Close the modal when close or cancel button is clicked
+            closeModal.addEventListener('click', () => {
+                examModal.classList.remove('is-active');
+            });
+            cancelBtn.addEventListener('click', () => {
+                examModal.classList.remove('is-active');
+            });
+
+            // Handle save (for both adding new exam or editing existing)
+            saveExamBtn.addEventListener('click', () => {
+                const newExam = {
+                    class: document.getElementById('examClass').value,
+                    name: document.getElementById('examName').value,
+                    subject: document.getElementById('examSubject').value,
+                    date: document.getElementById('examDate').value,
+                    time: document.getElementById('examTime').value,
+                };
+
+                if (isEditMode && currentEditIndex !== null) {
+                    // Update existing exam
+                    exams[currentEditIndex] = newExam;
+                } else {
+                    // Add new exam
+                    exams.push(newExam);
+                }
+
+                renderExams();
+                examModal.classList.remove('is-active');
+            });
+
+            // Handle edit exam
+            function handleEditExam(event) {
+                isEditMode = true;
+                currentEditIndex = event.target.closest('.edit-btn').getAttribute('data-index');
+                const exam = exams[currentEditIndex];
+
+                document.getElementById('examClass').value = exam.class;
+                document.getElementById('examName').value = exam.name;
+                document.getElementById('examSubject').value = exam.subject;
+                document.getElementById('examDate').value = exam.date;
+                document.getElementById('examTime').value = exam.time;
+
+                modalTitle.innerText = "Edit Exam";
+                examModal.classList.add('is-active');
+            }
+
+            // Handle delete exam
+            function handleDeleteExam(event) {
+                const index = event.target.closest('.delete-btn').getAttribute('data-index');
+                exams.splice(index, 1);  // Remove exam from the array
+                renderExams();
+            }
+
+            // Initially render the exam table
+            renderExams();
+        });
+    </script>
+</body>
+</html>

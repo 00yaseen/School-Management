@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <title>Student</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">STUDENT</b></a>
+                </div>
+                <a href="/Assests/HTML/Admin/Add-student.html" class="head-item" >Add Student</a>
+                <a href="/Assests/HTML/Admin/Assignment.html" class="head-item" >Assignment</a>
+                <a href="/Assests/HTML/Admin/student-notify.html" class="head-item" >Notify</a>
+                <a href="/Assests/HTML/Admin/Stud-attendance.html" class="head-item" >Attandance</a>
+                <a href="/Assests/HTML/Admin/class-routine.html" class="head-item" >Class Routine</a>
+                <a href="/Assests/HTML/Admin/student-feedback.html" class="head-item" >Feedback</a>
+
+
+                <div class="nav-center" style="padding-left: 20px;">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: 5px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 100px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+</header>
+<!-- Student Record Section -->
+  <div class="card" style="top: 100px;">
+      <h1 class="title has-text-centered" style="padding: 10px;">STUDENT</h1>
+
+      <table class="table is-fullwidth is-hoverable">
+          <thead>
+              <tr style="background-color: #0E1E3E; font-size: 20px;">
+                  <th style="color: white;">Roll No</th>
+                  <th style="color: white;">Name</th>
+                  <th style="color: white;">Gender</th>
+                  <th style="color: white;">Class</th>
+                  <th style="color: white;">Email</th>
+                  <th style="color: white;">Address</th>
+                  <th style="color: white;">Action</th>
+                  <th style="color: white;">Profile</th>
+              </tr>
+          </thead>
+          <tbody id="student-table-body">
+              <!-- Student data will be inserted here by JavaScript -->
+          </tbody>
+      </table>
+  </div>
+
+<!-- Modal for editing student -->
+<div class="modal" id="edit-student-modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+      <header class="modal-card-head">
+          <p class="modal-card-title">Edit Student</p>
+          <button class="delete" aria-label="close" onclick="closeModal()"></button>
+      </header>
+      <section class="modal-card-body">
+          <form id="edit-student-form">
+              <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                      <input class="input" type="text" id="edit-name" required>
+                  </div>
+              </div>
+              <div class="field">
+                  <label class="label">Gender</label>
+                  <div class="control">
+                      <div class="select">
+                          <select id="edit-gender">
+                              <option>Male</option>
+                              <option>Female</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="field">
+                  <label class="label">Class</label>
+                  <div class="control">
+                      <input class="input" type="text" id="edit-class" required>
+                  </div>
+              </div>
+              <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                      <input class="input" type="email" id="edit-email" required>
+                  </div>
+              </div>
+              <div class="field">
+                  <label class="label">Address</label>
+                  <div class="control">
+                      <input class="input" type="text" id="edit-address" required>
+                  </div>
+              </div>
+          </form>
+      </section>
+      <footer class="modal-card-foot">
+          <button class="button is-success" onclick="saveChanges()">Save changes</button>
+          <button class="button" onclick="closeModal()">Cancel</button>
+      </footer>
+  </div>
+</div>
+
+<!-- JavaScript for dynamic content -->
+<script>
+  let students = [
+      {
+          rollNo: 1,
+          name: "Mo Yaseen",
+          gender: "Male",
+          class: "BCA",
+          email: "yaseenazhar54@gmail.com",
+          address: "Daryaganj, Delhi"
+      },
+      {
+          rollNo: 2,
+          name: "Ayesha Khan",
+          gender: "Female",
+          class: "BCA",
+          email: "ayesha.khan@example.com",
+          address: "New Delhi"
+      },
+      {
+          rollNo: 3,
+          name: "Rahul Singh",
+          gender: "Male",
+          class: "BCA",
+          email: "rahul.singh@example.com",
+          address: "Mumbai"
+      }
+  ];
+
+  let currentEditIndex = null; // Keeps track of which student is being edited
+
+  // Function to load student data into the table
+  function loadStudentData() {
+      const studentTableBody = document.getElementById('student-table-body');
+      studentTableBody.innerHTML = ''; // Clear table body before loading
+      students.forEach((student, index) => {
+          let row = `
+              <tr>
+                  <td>${student.rollNo}</td>
+                  <td>${student.name}</td>
+                  <td>${student.gender}</td>
+                  <td>${student.class}</td>
+                  <td>${student.email}</td>
+                  <td>${student.address}</td>
+                  <td>
+                      <button class="button is-outlined is-dark" onclick="openEditModal(${index})">
+                          <span class="icon"><i class="fas fa-edit"></i></span>
+                      </button>
+                      <button class="button is-outlined is-success" onclick="deleteStudent(${index})">
+                          <span class="icon"><i class="fas fa-trash-alt"></i></span>
+                      </button>
+                  </td>
+                  <td>
+                      <button class="button is-outlined is-info">
+                          <span class="icon"><i class="fas fa-eye has-text-black"></i></span>
+                      </button>
+                  </td>
+              </tr>
+          `;
+          studentTableBody.innerHTML += row;
+      });
+  }
+
+  // Function to open the modal and pre-fill student data
+  function openEditModal(index) {
+      currentEditIndex = index;
+      const student = students[index];
+
+      // Prefill form with student data
+      document.getElementById('edit-name').value = student.name;
+      document.getElementById('edit-gender').value = student.gender;
+      document.getElementById('edit-class').value = student.class;
+      document.getElementById('edit-email').value = student.email;
+      document.getElementById('edit-address').value = student.address;
+
+      // Show the modal
+      document.getElementById('edit-student-modal').classList.add('is-active');
+  }
+
+  // Function to close the modal
+  function closeModal() {
+      document.getElementById('edit-student-modal').classList.remove('is-active');
+  }
+
+  // Function to save changes
+  function saveChanges() {
+      if (currentEditIndex !== null) {
+          const student = students[currentEditIndex];
+
+          // Get updated data from the form
+          student.name = document.getElementById('edit-name').value;
+          student.gender = document.getElementById('edit-gender').value;
+          student.class = document.getElementById('edit-class').value;
+          student.email = document.getElementById('edit-email').value;
+          student.address = document.getElementById('edit-address').value;
+
+          // Reload table with updated data
+          loadStudentData();
+
+          // Close the modal
+          closeModal();
+      }
+  }
+
+  // Function to delete student
+  function deleteStudent(index) {
+      if (confirm(`Are you sure you want to delete student: ${students[index].name}?`)) {
+          students.splice(index, 1);
+          loadStudentData(); // Reload the table with updated data
+      }
+  }
+
+  // Load the student data when the page loads
+  document.addEventListener('DOMContentLoaded', loadStudentData);
+</script>
+    
+
+    </section>
+    </body>
+    </html>

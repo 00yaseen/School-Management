@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Assests/CSS/style.css">
+    <title>Student-class-routine</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: #0E1E3E;">
+        <div class="navbar-menu">
+            <div class="navbar-brand">
+                <h1 style="border-bottom: 1px solid #E3E3E5; width: 100%;"><i class="fas fa-graduation-cap"></i>Education</h1>
+            </div>
+            <a href="/Assests/HTML/Admin/dashboad.html" class="navbar-item"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+            <a href="/Assests/HTML/Admin/teacher.html" class="navbar-item"><i class="fas fa-user-tie"></i>TEACHER</a>
+            <a href="/Assests/HTML/Admin/student.html" class="navbar-item"><i class="fas fa-user-graduate"></i>STUDENT</a>
+            <a href="/Assests/HTML/Admin/Notice.html" class="navbar-item"><i class="fas fa-envelope-open-text"></i>NOTICE</a>
+            <a href="/Assests/HTML/Admin/Fee.html" class="navbar-item"><i class="fas fa-dollar-sign"></i>FEE</a> 
+            <a href="/Assests/HTML/Admin/Examination.html" class="navbar-item"><i class="fas fa-file-signature"></i>EXAM</a>
+            <a href="/Assests/HTML/Admin/Library.html" class="navbar-item"><i class="fas fa-university"></i>LIBRARY</a>
+            <a href="/Assests/HTML/Admin/Transport.html" class="navbar-item"><i class="fas fa-bus"></i>TRANSPORT</a>
+            <a href="/Assests/HTML/Admin/Staff.html" class="navbar-item"><i class="fas fa-users"></i>STAFF</a>
+            <a href="/Assests/HTML/Admin/Parent.html" class="navbar-item"><i class="fas fa-user-friends"></i>PARENT</a>
+            <img src="/Assests/IMG/school-kids-clipart-transparent-background-free-png.webp" height="200" width="200">
+        </div>
+    </nav>
+    <!--main content-->
+    <section class="main-content">
+        <header class="header">
+            <div class="container">
+              <nav class="nav" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav-left" style="margin-right: 1rem;">
+                  <a class="nav-item" href="#"><b style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #0E1E3E;">STUDENT</b></a>
+                </div>
+                <a href="/Assests/HTML/Admin/Add-student.html" class="head-item" >Add Student</a>
+                <a href="/Assests/HTML/Admin/Assignment.html" class="head-item" >Assignment</a>
+                <a href="/Assests/HTML/Admin/student-notify.html" class="head-item" >Notify</a>
+                <a href="/Assests/HTML/Admin/Stud-attendance.html" class="head-item" >Attandance</a>
+                <a href="/Assests/HTML/Admin/class-routine.html" class="head-item" >Class Routine</a>
+                <a href="/Assests/HTML/Admin/student-feedback.html" class="head-item" >Feedback</a>
+
+
+                <div class="nav-center" style="padding-left: 20px;">
+                  <div class="search-bar" style="width: 100%;">
+                    <input class="input" type="search" placeholder="Search..." style="width: 500px; border-radius: 0.5rem;">
+                  </div>
+                </div>
+                
+                <div class="nav-right" style=" margin-right: -250px;">
+                  <a class="nav-item" href="#" style="padding-right: 30px; color: #0E1E3E;">
+                    <button class="button">
+                      <span class="icon is-small">
+                    <i class="fas fa-comment" style="font-size: 25px;"></i>
+                    </span>
+                    </button>
+                  </a>
+                  <a class="nav-item" href="#" style="padding-right: 5px; color: #0E1E3E;">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="icon is-small">
+                    <i class="fas fa-bell" style="font-size: 25px;"></i>
+                      </span>
+                  </button>
+                </a>
+                  <a class="nav-item" href="#" style="padding-right: 100px; color: #0E1E3E;"></a>
+                  <div class="dropdown" id="myDropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span class="icon is-small">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu" style="left: -150%;">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+                                <span>Settings</span>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <span class="icon is-small">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+</header>
+<!-- Class Routine Section -->
+    <div class="card" style="top: 100px; padding: 10px 20px;">
+        <h2 class="title has-text-centered">Class Routine Management</h2><hr>
+<p class="subtitle has-text-centered"> All Period must be end in 30 minutes. </p>
+        <!-- Class Selection -->
+        <div class="field">
+            <label class="label">Select Class</label>
+            <div class="control">
+                <div class="select" id="class-select">
+                    <select onchange="loadClassRoutine(this.value)">
+                        <option value="">-- Select Class --</option>
+                        <option value="1">Class 1</option>
+                        <option value="2">Class 2</option>
+                        <option value="3">Class 3</option>
+                        <option value="4">Class 4</option>
+                        <option value="5">Class 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Container -->
+        <div class="has-text-right">
+            <button class="button is-primary is-hidden is-outlined" id="add-routine-btn" onclick="openRoutineModal()">Add Routine</button>
+        </div><br>
+
+        <!-- Class Routine Tables -->
+        <div id="routine-tables"></div>
+    </div>
+
+<!-- Add Routine Modal -->
+<div class="modal" id="routine-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Add Routine</p>
+            <button class="delete" aria-label="close" id="close-routine-modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="routine-form">
+                <input type="hidden" id="class-id">
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                        <input class="input" type="text" id="subject" placeholder="Enter Subject Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Day</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="day" required>
+                                <option value="">Select Day</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Time</label>
+                    <div class="control">
+                        <input class="input" type="time" id="time" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-success is-outlined" type="submit">Add Routine</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+<!-- Edit Routine Modal -->
+<div class="modal" id="edit-routine-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Edit Routine</p>
+            <button class="delete" aria-label="close" id="close-edit-routine-modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="edit-routine-form">
+                <input type="hidden" id="edit-routine-id">
+                <input type="hidden" id="edit-class-id">
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                        <input class="input" type="text" id="edit-subject" placeholder="Enter Subject Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Day</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="edit-day" required>
+                                <option value="">Select Day</option>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Time</label>
+                    <div class="control">
+                        <input class="input" type="time" id="edit-time" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-success is-outlined" type="submit">Update Routine</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+<!-- JavaScript to handle routine and modals -->
+<script>
+    // Sample class routine data organized by class
+    let classRoutineRecords = {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+    };
+
+    // Function to load class routine into the tables
+    function loadClassRoutine(classId) {
+        const routineTables = document.getElementById('routine-tables');
+        routineTables.innerHTML = ''; // Clear existing tables
+
+        const addButton = document.getElementById('add-routine-btn');
+        addButton.classList.toggle('is-hidden', !classId); // Show/Hide add button
+
+        if (classId && classRoutineRecords[classId]) {
+            const table = document.createElement('table');
+            table.className = "table is-fullwidth is-striped is-hoverable class-table";
+            table.innerHTML = `
+                <thead>
+                    <tr style="background-color: #0E1E3E; font-size: 20px;">
+                        <th style="color: white;">ID</th>
+                        <th style="color: white;">Subject</th>
+                        <th style="color: white;">Day</th>
+                        <th style="color: white;">Time</th>
+                        <th style="color: white;">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="routine-table-body-${classId}">
+                </tbody>
+            `;
+            routineTables.appendChild(table);
+            
+            // Load routines into the table
+            classRoutineRecords[classId].forEach((record) => {
+                const row = `
+                    <tr>
+                        <td>${record.id}</td>
+                        <td>${record.subject}</td>
+                        <td>${record.day}</td>
+                        <td>${record.time}</td>
+                        <td>
+                            <button class="button is-outlined is-warning" onclick="openEditRoutineModal(${record.id}, ${classId})">
+                                <span class="icon"><i class="fas fa-edit"></i></span>
+                            </button>
+                            <button class="button is-outlined is-danger" onclick="removeRoutine(${record.id}, ${classId})">
+                                <span class="icon"><i class="fas fa-trash"></i></span>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+                document.getElementById(`routine-table-body-${classId}`).innerHTML += row;
+            });
+        }
+    }
+
+    // Function to open the add routine modal
+    function openRoutineModal() {
+        const modal = document.getElementById('routine-modal');
+        modal.classList.add('is-active'); // Show the modal
+        const classId = document.getElementById('class-select').querySelector('select').value;
+        document.getElementById('class-id').value = classId; // Set the class ID
+    }
+
+    // Function to close the add routine modal
+    const closeRoutineModal = document.getElementById('close-routine-modal');
+    closeRoutineModal.addEventListener('click', () => {
+        const modal = document.getElementById('routine-modal');
+        modal.classList.remove('is-active'); // Hide the modal
+    });
+
+    // Handle the add routine form submission
+    const routineForm = document.getElementById('routine-form');
+    routineForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const classId = document.getElementById('class-id').value;
+        const subject = document.getElementById('subject').value;
+        const day = document.getElementById('day').value;
+        const time = document.getElementById('time').value;
+
+        // Generate new ID for the routine
+        const newId = classRoutineRecords[classId].length + 1;
+
+        // Add new routine record
+        classRoutineRecords[classId].push({ id: newId, subject, day, time });
+
+        // Close the modal and reset the form
+        const modal = document.getElementById('routine-modal');
+        modal.classList.remove('is-active');
+        routineForm.reset();
+
+        // Reload class routine data
+        loadClassRoutine(classId);
+    });
+
+    // Function to open the edit routine modal
+    function openEditRoutineModal(id, classId) {
+        const record = classRoutineRecords[classId].find(r => r.id === id);
+        if (record) {
+            document.getElementById('edit-routine-id').value = record.id;
+            document.getElementById('edit-class-id').value = classId;
+            document.getElementById('edit-subject').value = record.subject;
+            document.getElementById('edit-day').value = record.day;
+            document.getElementById('edit-time').value = record.time;
+
+            const modal = document.getElementById('edit-routine-modal');
+            modal.classList.add('is-active'); // Show the edit modal
+        }
+    }
+
+    // Function to close the edit routine modal
+    const closeEditRoutineModal = document.getElementById('close-edit-routine-modal');
+    closeEditRoutineModal.addEventListener('click', () => {
+        const modal = document.getElementById('edit-routine-modal');
+        modal.classList.remove('is-active'); // Hide the modal
+    });
+
+    // Handle the edit routine form submission
+    const editRoutineForm = document.getElementById('edit-routine-form');
+    editRoutineForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const id = parseInt(document.getElementById('edit-routine-id').value);
+        const classId = document.getElementById('edit-class-id').value;
+        const subject = document.getElementById('edit-subject').value;
+        const day = document.getElementById('edit-day').value;
+        const time = document.getElementById('edit-time').value;
+
+        // Update routine record
+        const index = classRoutineRecords[classId].findIndex(r => r.id === id);
+        if (index !== -1) {
+            classRoutineRecords[classId][index] = { id, subject, day, time };
+
+            // Close the modal and reset the form
+            const modal = document.getElementById('edit-routine-modal');
+            modal.classList.remove('is-active');
+            editRoutineForm.reset();
+
+            // Reload class routine data
+            loadClassRoutine(classId);
+        }
+    });
+
+    // Function to remove a routine record
+    function removeRoutine(id, classId) {
+        classRoutineRecords[classId] = classRoutineRecords[classId].filter(record => record.id !== id);
+        loadClassRoutine(classId);
+    }
+</script>
